@@ -17,8 +17,8 @@ console.log(process.env.MONGO_URL);
 // Connect to mongodb using mongoose
 mongoose
   .connect(process.env.MONGO_URL, {
-    // useNewUrlParser: true,
-    // useUnifiedTopology: true, 
+    useNewUrlParser: true,
+    useUnifiedTopology: true, 
   })
   .then(() => {
     console.log("Connected to MongoDB");
